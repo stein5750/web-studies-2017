@@ -1,0 +1,132 @@
+/* Body */
+body {
+    background-color : #222222;
+    width:100%;
+}
+
+
+
+/* Div containing all content except menu.*/
+.contentOuter {
+    width: calc( 100% - 270px ); /* 100% - width of menu 150px - padding menu 2*20px- padding content 2*20px */
+    left : 270px;
+    position : absolute;
+}
+
+
+
+/* Div centering content inside contentOuter.*/
+.content {
+    margin : 0 auto; /* Use margin to center content. */
+    width : 611px; /* Width of div */
+    text-align : left; /* Align text to left side */
+    color : white; /* Textcolour white*/
+}
+
+.content a:link {
+    color : white;
+}
+
+.content a:visited {
+    color : #545454;;
+}
+
+/* Set image border */
+.content img {
+    border: 1px solid black; /* Draw border around image */
+}
+
+/* Set video border */
+.content video {
+    border: 1px solid black; /* Draw border around video */
+}
+
+/* Set canvas border */
+.content canvas {
+    border: 1px solid black; /* Draw border around canvas */
+}
+
+/* Center video element */
+video {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Menu */
+#menuOuterTable{
+    position : fixed;
+    top : 20px; /* Space between menu and top in px */
+    left : 20px; /* Space between menu and left edge in px */
+    border: 5px solid #545454; /* Set border */
+    border-radius: 50px 50px 50px 50px; /* Create rounded edges */
+    padding: 15px; /* Padding */
+    background: linear-gradient(to right,rgba(0,0,0,1),rgba(137,137,137,1),rgba(0,0,0,1)); /* Gradient from left to right */
+    width : 150px; /* Width */
+    height: 760px; /* Height */
+}
+
+
+/* Set textcolour to white, text centered and fontsize 16 px as default*/
+.menuClass {
+    text-align : center;
+    font-size : 16px;
+}
+
+
+/* Place the first row in the menu table at the top of the table*/
+#menuTopRow {
+    vertical-align : top;
+}
+
+
+/* Set height of each row tp 20 px */
+.menuClass tr {
+    height : 20px;
+}
+
+
+/* Set font size for table heading*/
+.menuClass th{
+	color : white;
+	font-size: 26px;
+}
+
+
+/* Set padding, alignment and font size for table column */
+.menuClass td{
+    padding : 15px;
+       border-radius: 25px 25px 25px 25px; /* Create rounded edges */
+}
+
+/* Set unclicked links to be white, without underline and font size 16px */
+.menuClass a:link {
+    color : white;
+    text-decoration: none;
+}
+
+
+/* Set clicked links to be whote, without underline and fontsize 16px */
+.menuClass a:visited {
+        color : white;
+        text-decoration: none;
+}
+
+
+/* Hide paragraph*/
+.menuHoverClass p {
+    display: none;
+
+}
+
+
+/* Show paragraph when mouse hovers above the whole class */
+.menuHoverClass:hover p {
+    display: block;
+    color : #d2d2d2;
+}
+
+/* Make the background darker when hovering. */
+.menuHoverClass:hover {
+    background-color : rgba(0,0,0,0.2); /* Add transparent black colour when hovering.*/
+}

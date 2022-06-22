@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Body */
+body {
+    background-color : #222222;
+    width:100%;
+}
+
+
+
+/* Div containing all content except menu.*/
+.contentOuter {
+    width: calc( 100% - 270px ); /* 100% - width of menu 150px - padding menu 2*20px- padding content 2*20px */
+    left : 270px;
+    position : absolute;
+}
+
+
+/* Div centering content inside contentOuter.*/
+.content {
+    margin : 0 auto; /* Use margin to center content. */
+    width : 611px; /* Width of div */
+    text-align : left; /* Align text to left side */
+    color : white; /* Textcolour white*/
+}
+
+.content a:link {
+    color : white;
+}
+
+.content a:visited {
+    color : #545454;;
+}
+
+/* Set image border */
+.content img {
+    border: 1px solid black; /* Draw border around image */
+}
+
+/* Set video border */
+.content video {
+    border: 1px solid black; /* Draw border around video */
+}
+
+/* Set canvas border */
+.content canvas {
+    border: 1px solid black; /* Draw border around canvas */
+}
